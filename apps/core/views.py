@@ -2,5 +2,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-def helloworld(request):
-	return render(request, 'helloworld.html')
+def frontpage(request):
+	return render(request, 'frontpage.html')
+
+def contact(request):
+	return render(request, 'contact.html')
