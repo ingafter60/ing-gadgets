@@ -10,6 +10,7 @@ class Category(models.Model):
 
     def __str__(self):
         return self.title
+        ordering = ('ordering',)
 
 class Product(models.Model):
 	
