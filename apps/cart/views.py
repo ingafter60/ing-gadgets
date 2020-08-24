@@ -1,4 +1,14 @@
-from django.shortcuts import render
+# apps/cart/views.py
 
-def cart(request):
-   return render(request, 'cart.html')
+from django.shortcuts import render, redirect
+
+from .cart import Cart
+
+def cart_detail(request):
+    cart = Cart(request)
+
+    context = {
+        'cart': cart
+    }
+
+    return render(request, 'cart.html', context)
