@@ -25,7 +25,11 @@
 			<div class="navbar-end">
 				{% for category in menu_categories %}
 					<a class="navbar-item" href="{% url 'category_detail' category.slug %}">{{category.title}}</a>
-				{% endfor %}				
+				{% endfor %}
+					
+				<div class="navbar-item">
+					<a href="{% url 'cart' %}" class="button is-primary">Cart</a>
+				</div>				
 			</div>
 		</div>
 	</nav>

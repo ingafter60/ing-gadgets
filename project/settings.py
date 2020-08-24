@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # new
     'apps.core',
     'apps.store',
+    'apps.cart',
 ]
 
 MIDDLEWARE = [
